@@ -10,7 +10,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header class="top-bar">
+        <div class="top-bar">
             <div class="left-header">
                 <a href="#">About</a>
                 <a href="#">Store</a>
@@ -20,8 +20,8 @@
                     <a href="#">Gmail</a>
                     <a href="#">Images</a>
                 </div>
-                <div>
-                    <a href="#">
+                <div class="right-image-container">
+                    <a href="#" id="app-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
                     </a>
                     <a href="#">
@@ -29,13 +29,16 @@
                     </a>
                 </div>
             </div>
-        </header>
+        </div>
         <main>
             <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo" class="logo">
             <form action="">
                 <input type="text" name="search" id="search">
-                <button type="submit">Google Search</button>
-                <button type="submit">Feeling Lucky!</button>
+                <div class="form-button">
+                    <button type="submit">Google Search</button>
+                    <button type="submit">Feeling Lucky!</button>
+                </div>
+                
             </form>
         </main>
         <footer>
