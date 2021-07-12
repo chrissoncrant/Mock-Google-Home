@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    --black: #50494e;
 }
 
 body {
@@ -30,7 +31,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #50494e;
+    color: var(--black);
     
 }
 
@@ -38,6 +39,10 @@ a:hover {
     text-decoration: underline;
     transition: text-decoration 0.2s ease-out;
 }
+
+/*
+================ Top Section =====================
+*/
 
 .top-bar {
     display: flex;
@@ -88,25 +93,66 @@ a:hover {
 
 }
 
+/*
+================ Main Section =====================
+*/
+
 
 .logo {
     width: 280px;
     margin: 20vh auto 0 auto;
 }
 
+
+
 form {
     display: flex;
     flex-direction: column;
 }
 
-form input {
+.search-bar-container {
+    display: flex;
+    align-content: center;
+    position: relative;
+    height: 63px;
     width: 575px;
+    margin: auto;
+}
+
+.md-color {
+    color: grey;
+}
+
+.mag-glass {
+    margin: 19.5px 0;
+}
+
+.mic {
+    margin: 19.5px 0;
+}
+
+.mag-img {
+    margin: 0;
+    position: absolute;
+    left: 1em;
+
+}
+
+.mic-img {
+    margin: 0;
+    position: absolute;
+    right: 1em;
+}
+
+form input {
+    width: 100%;
     margin: 1em auto;
     height: 2.75em;
     border: 1px solid #80808060;
     background: #fffdfc;
     border-radius: 24px;
-    padding-left: 2em;
+    padding-left: 4em;
+    color: var(--black);
 }
 
 form input:hover {
@@ -129,7 +175,7 @@ form input:focus-visible {
     border: 0;
     padding: 0.5em 2em;
     cursor: pointer;
-    color: #50494e;
+    color: var(--black);
 }
 
 button:hover {
