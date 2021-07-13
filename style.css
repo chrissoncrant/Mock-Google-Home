@@ -69,10 +69,26 @@ a:hover {
 
 }
 
+#header-a {
+    height: 36px;
+    width: 36px;
+    border: 0px solid black;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-out;
+}
+
 #header-profile-pic {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+#header-a:hover {
+    background-color: rgba(150, 150, 150, 0.301);
 }
 
 #app-icon {
@@ -84,6 +100,7 @@ a:hover {
     padding: 0;
     transition: background 0.2s ease-out;
     border-radius: 100%;
+    margin-right: 0.5em;
 
 }
 
@@ -97,13 +114,10 @@ a:hover {
 ================ Main Section =====================
 */
 
-
 .logo {
     width: 280px;
     margin: 20vh auto 0 auto;
 }
-
-
 
 form {
     display: flex;
@@ -112,51 +126,58 @@ form {
 
 .search-bar-container {
     display: flex;
-    align-content: center;
+    justify-content: space-between;  
     position: relative;
-    height: 63px;
+    height: 2.75em;
     width: 575px;
+    border: 1px solid #80808060;
+    border-radius: 24px;
     margin: auto;
+    transition: box-shadow 0.1s ease-out;
+    padding: 0.1em;
+    padding-bottom: 0;
 }
+
+.search-bar-container div {
+    cursor: pointer;
+}
+
+
+.search-bar-container:hover {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.219);
+}
+
 
 .md-color {
     color: grey;
 }
 
 .mag-glass {
-    margin: 19.5px 0;
+    border: 0px solid black;
+    margin: 8px 0;
 }
 
 .mic {
-    margin: 19.5px 0;
+    border: 0px solid black;
+    margin: 8px 0;
 }
 
 .mag-img {
-    margin: 0;
-    position: absolute;
-    left: 1em;
-
+    border: 0px solid black;
+    padding-left: 0.5em;
 }
 
 .mic-img {
-    margin: 0;
-    position: absolute;
-    right: 1em;
+    border: 0px solid black;
+    padding-right: 0.5em;
 }
 
 form input {
-    width: 100%;
-    margin: 1em auto;
-    height: 2.75em;
-    border: 1px solid #80808060;
+    border: 0px solid black;
     background: #fffdfc;
-    border-radius: 24px;
-    padding-left: 4em;
     color: var(--black);
-}
-
-form input:hover {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.219);
+    width: 503px;
+    font-size: 1em;
 }
 
 form input:focus-visible {
@@ -176,10 +197,12 @@ form input:focus-visible {
     padding: 0.5em 2em;
     cursor: pointer;
     color: var(--black);
+    transition: box-shadow 0.1s ease-out;
+    border-radius: 2px;
 }
 
 button:hover {
-    text-decoration: underline;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.219);
 }
 
 footer {
@@ -190,7 +213,7 @@ footer {
     padding: 0.5em 1em;
     display: flex;
     justify-content: space-between;
-    background: #a3a3a32c;
+    background: rgb(239, 239, 239);
 
     
 }
